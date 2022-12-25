@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FireFishingRod:jar">
+    <output-path>$PROJECT_DIR$/../../Server/plugins</output-path>
+    <root id="archive" name="FireFishingRod.jar">
+      <element id="module-output" name="FireFishingRod" />
+    </root>
+  </artifact>
+</component>
