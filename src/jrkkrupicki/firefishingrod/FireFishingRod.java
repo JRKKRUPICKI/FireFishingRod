@@ -38,8 +38,8 @@ public class FireFishingRod extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerFish(PlayerFishEvent event){
         Player player = event.getPlayer();
-        ItemStack itemInUse = player.getInventory().getItemInMainHand();
-        if(!itemInUse.isSimilar(fireFishingRod)) return;
+        ItemStack itemInHand = player.getInventory().getItemInMainHand();
+        if(!itemInHand.isSimilar(fireFishingRod)) return;
         Entity caught = event.getCaught();
         if(caught == null) return;
         if(!(caught instanceof Item)) return;
